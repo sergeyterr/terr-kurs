@@ -39,7 +39,21 @@
 
 	$terr_course_text_domain = 'terr-course-exch';
 
+	define( 'TERR_KURS_DS', DIRECTORY_SEPARATOR );
+	// terr-kurs/terr-kurs.php
+	define( 'TERR_KURS_PLUGIN_FILE', dirname( plugin_basename( __FILE__ ) ) . '/terr-kurs.php' );
+	// terr-kurs/
+	define( 'TERR_KURS_PLUGIN_FOLDER', dirname( plugin_basename( __FILE__ ) ) . '/' );
+	// E:\server\domains\testt\www/wp-content/plugins/terr-kurs/
+	define( 'TERR_KURS_DIR', WP_PLUGIN_DIR . '/' . TERR_KURS_PLUGIN_FOLDER );
+	// http://testt/wp-content/plugins/terr-kurs/
+	define( 'TERR_KURS_URL', WP_PLUGIN_URL . '/' . TERR_KURS_PLUGIN_FOLDER );
+
+	//decor_market_var_dump( TERR_KURS_URL );
+
 	require_once( 'functions.php' );
 
 	// Подключаем текстовый домен
 	add_action( 'plugins_loaded', 'terr_kurs_text_setup' );
+	// Подключаем Carbon Fields
+	add_action( 'after_setup_theme', 'terr_kurs_load_carbone', 5 );
