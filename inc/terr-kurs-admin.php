@@ -20,7 +20,7 @@
 	{
 		global $terr_course_text_domain;
 
-		Container::make( 'theme_options', __( 'PB 24 Course', $terr_course_text_domain ) )
+		Container::make( 'theme_options', __( 'Privat Bank Course', $terr_course_text_domain ) )
 				 ->set_page_file( 'terr_course_admin_page' )
 				 ->set_icon( 'dashicons-chart-bar' )
 				 ->add_tab( __( 'Base Settings', $terr_course_text_domain ), array(
@@ -31,7 +31,7 @@
 							  'USD' => __( 'US Dollar', $terr_course_text_domain ),
 							  'BTC' => __( 'Bitcoint', $terr_course_text_domain ),
 						  ) )
-						  ->set_default_value( array( 'usd', 'eur' ) )
+						  ->set_default_value( array( 'USD', 'EUR' ) )
 						  ->set_help_text( __( 'Select the currency to display.', $terr_course_text_domain ) ),
 					 Field::make( 'text', 'terr_course_check_time', __( 'Check Time (hours)', $terr_course_text_domain ) )
 						  ->set_width( 50 )

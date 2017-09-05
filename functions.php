@@ -118,7 +118,7 @@
 			{
 				if ( in_array( $course['ccy'], $terr_course_list ) )
 				{
-					$result .= '<span class="' . $course['ccy'] . '">' . $course['ccy'] . ' ' . $course['buy'] . '/' . $course['sale'] . '</span> ';
+					$result .= '<span class="' . $course['ccy'] . '"><span class="currency_title">' . $course['ccy'] . '</span> <span class="currency_val">' . $course['buy'] . ' / ' . $course['sale'] . '</span></span> ';
 				}
 			}
 
