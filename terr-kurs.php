@@ -51,9 +51,19 @@
 
 	//decor_market_var_dump( TERR_KURS_URL );
 
-	require_once( 'functions.php' );
+	// Подключаем класс работы с ПБ
+	require_once( TERR_KURS_DIR . 'classes/class-terr-pb24.php' );
+	// Подключаем functions.php
+	require_once( TERR_KURS_DIR . 'functions.php' );
+	// Подключаем файл создания админки
+	require_once( TERR_KURS_DIR . 'inc/terr-kurs-admin.php' );
 
 	// Подключаем текстовый домен
 	add_action( 'plugins_loaded', 'terr_kurs_text_setup' );
 	// Подключаем Carbon Fields
 	add_action( 'after_setup_theme', 'terr_kurs_load_carbone', 5 );
+	// Запускаем проверку курсов
+	add_action( 'init', 'terr_kurs_check' );
+
+	// добавляем шорткод вывода курсов
+	add_shortcode( 'privat_bank_course', 'terr_kurs_show_short' );
