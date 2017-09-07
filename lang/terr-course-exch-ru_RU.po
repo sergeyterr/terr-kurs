@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Privat Bank Course Exchange\n"
-"POT-Creation-Date: 2017-09-05 15:03+0300\n"
-"PO-Revision-Date: 2017-09-05 15:06+0300\n"
+"POT-Creation-Date: 2017-09-07 19:11+0300\n"
+"PO-Revision-Date: 2017-09-07 19:12+0300\n"
 "Last-Translator: Sergey Terr <ater123@mail.ru>\n"
 "Language-Team: Sergey Terr <ater123@mail.ru>\n"
 "Language: ru_RU\n"
@@ -22,14 +22,6 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: functions.php:112
-msgid "Course: "
-msgstr "Курс: "
-
-#: functions.php:122
-msgid "On: "
-msgstr "На: "
-
 #: inc/carbon-fields/core/Libraries/Plugin_Update_Warning/Plugin_Update_Warning.php:69
 #, php-format
 msgid ""
@@ -38,260 +30,311 @@ msgid ""
 "functionality.\n"
 "Developers should review the upgrade guide on %1$s."
 msgstr ""
+"Новая версия Carbon Fields является важным обновлением. Перед обновлением и "
+"тестированием любых надстроек или пользовательских функций убедитесь, что у "
+"вас есть полная резервная копия. Разработчики должны просмотреть руководство "
+"по обновлению на%1$s."
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Container/Container.php:711
 msgid "General"
-msgstr ""
+msgstr "Основные"
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Container/Theme_Options_Container.php:211
 msgid "Settings saved."
-msgstr ""
+msgstr "Настройки сохранены."
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Field/File_Field.php:29
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Field/File_Field.php:30
 msgid "Select File"
-msgstr ""
+msgstr "Выбрать файл"
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Field/File_Field.php:31
 msgid "Files"
-msgstr ""
+msgstr "Файлы"
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Field/Footer_Scripts_Field.php:20
 msgid ""
 "If you need to add scripts to your footer (like Google Analytics tracking "
 "code), you should enter them in this box."
 msgstr ""
+"Если вам нужно добавить скрипты в нижний колонтитул (например, код "
+"отслеживания Google Analytics), вы должны ввести их в это поле."
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Field/Gravity_Form_Field.php:47
 msgid "No form"
-msgstr ""
+msgstr "ID Формы"
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Field/Header_Scripts_Field.php:20
 msgid "If you need to add scripts to your header, you should enter them here."
 msgstr ""
+"Если вам нужно добавить скрипты в свой заголовок, вы должны ввести их здесь."
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Field/Image_Field.php:18
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Field/Image_Field.php:19
 msgid "Select Image"
-msgstr ""
+msgstr "Выберите изображение"
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Field/Image_Field.php:20
 msgid "Images"
-msgstr ""
+msgstr "Изображения"
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Field/Sidebar_Field.php:50
 msgctxt "sidebar"
 msgid "Add New"
-msgstr ""
+msgstr "Добавить новый"
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Libraries/Sidebar_Manager/Sidebar_Manager.php:69
 msgid "Please pass a name for the sidebar."
-msgstr ""
+msgstr "Пожалуйста, введите название для сайдбара."
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Libraries/Sidebar_Manager/Sidebar_Manager.php:72
 msgid "Unknown action attempted."
-msgstr ""
+msgstr "Неизвестная операция."
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Libraries/Sidebar_Manager/Sidebar_Manager.php:102
 msgid "Sidebar with the same ID is already registered."
-msgstr ""
+msgstr "Боковая панель с таким же идентификатором уже зарегистрирована."
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Libraries/Sidebar_Manager/Sidebar_Manager.php:112
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Libraries/Sidebar_Manager/Sidebar_Manager.php:142
 msgid ""
 "Failed to update option storing your custom sidebars. Please contact support."
 msgstr ""
+"Не удалось обновить опцию, вашей боковой панели. Обратитесь в службу "
+"поддержки."
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Libraries/Sidebar_Manager/Sidebar_Manager.php:137
 msgid "Sidebar not found."
-msgstr ""
+msgstr "Боковая панель не найдена."
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Libraries/Sidebar_Manager/Sidebar_Manager.php:181
 msgid "Add Sidebar"
-msgstr ""
+msgstr "Добавить боковую панель"
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Libraries/Sidebar_Manager/Sidebar_Manager.php:182
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Loader/Loader.php:141
 msgid "Please enter the name of the new sidebar:"
-msgstr ""
+msgstr "Пожалуйста, введите имя новой панели:"
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Libraries/Sidebar_Manager/Sidebar_Manager.php:183
 msgid "Are you sure you wish to remove this sidebar?"
-msgstr ""
+msgstr "Вы действительно хотите удалить эту боковую панель?"
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Loader/Loader.php:119
 msgid "Please fill out all required fields highlighted below."
-msgstr ""
+msgstr "Пожалуйста, заполните все обязательные поля, отмеченные ниже."
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Loader/Loader.php:120
 msgid "The changes you made will be lost if you navigate away from this page."
 msgstr ""
+"Изменения которые вы сделали будут потеряны если вы уйдете с этой страницы."
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Loader/Loader.php:123
 msgid "The address could not be found. "
-msgstr ""
+msgstr "Не удалось найти адрес. "
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Loader/Loader.php:124
 msgid "Geocode was not successful for the following reason: "
-msgstr ""
+msgstr "Геолокация не доступна по следующим причинам "
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Loader/Loader.php:125
 msgid "Locate address on the map:"
-msgstr ""
+msgstr "Найти адрес на карте:"
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Loader/Loader.php:126
 #, php-format
 msgid "Minimum number of items not reached (%s items)"
-msgstr ""
+msgstr "Минимальное количество элементов не достигнуто (%s)"
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Loader/Loader.php:127
 #, php-format
 msgid "Maximum number of items reached (%s items)"
-msgstr ""
+msgstr "Достигнуто максимальное количество (%s)"
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Loader/Loader.php:129
 #, php-format
 msgid "There are no %s yet. Click <a href=\"#\">here</a> to add one."
 msgstr ""
+"%s пока еще не добавлено. Чтобы добавить кликните <a href=\"#\">здесь</a>."
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Loader/Loader.php:130
 #, php-format
 msgid "Minimum number of rows not reached (%1$d %2$s)"
-msgstr ""
+msgstr "Минимальное количество строк не достигнуто (%1$d %2$s)"
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Loader/Loader.php:131
 #, php-format
 msgid "Maximum number of rows exceeded (%1$d %2$s)"
-msgstr ""
+msgstr "Превышено максимальное количество строк (%1$d %2$s)"
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Loader/Loader.php:132
 #, php-format
 msgid "Add %s"
-msgstr ""
+msgstr "Добавить  %s"
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Loader/Loader.php:133
 msgid "Clone"
-msgstr ""
+msgstr "Клонировать"
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Loader/Loader.php:134
 msgid "Remove"
-msgstr ""
+msgstr "Удалить"
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Loader/Loader.php:135
 msgid "Collapse/Expand"
-msgstr ""
+msgstr "Свернуть/Развернуть"
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Loader/Loader.php:137
 msgid "Please fill out all fields correctly. "
-msgstr ""
+msgstr "Пожалуйста, заполните все поля правильно. "
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Loader/Loader.php:138
 msgid "This field is required. "
-msgstr ""
+msgstr "Это поле обязательно к заполнению. "
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Loader/Loader.php:139
 msgid "Please choose an option. "
-msgstr ""
+msgstr "Выберите опцию. "
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Loader/Loader.php:143
 msgid "Select Time"
-msgstr ""
+msgstr "Выберите время"
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Loader/Loader.php:144
 msgid "Select Date"
-msgstr ""
+msgstr "Выберите дату"
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Loader/Loader.php:146
 msgid "out of"
-msgstr ""
+msgstr "из"
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Loader/Loader.php:147
 msgid "selected item"
-msgstr ""
+msgstr "выбранный элемент"
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Loader/Loader.php:148
 msgid "selected items"
-msgstr ""
+msgstr "выбранные элементы"
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Loader/Loader.php:150
 msgid "Select a color"
-msgstr ""
+msgstr "Выберите цвет"
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Loader/Loader.php:152
 msgid "No options."
-msgstr ""
+msgstr "Нет опций."
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Loader/Loader.php:154
 msgid "Show all options"
-msgstr ""
+msgstr "Показать все параметры"
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/Loader/Loader.php:156
 msgid "Search..."
-msgstr ""
+msgstr "Поиск..."
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/REST_API/Router.php:287
 msgid "No option names provided"
-msgstr ""
+msgstr "Не указаны имена опций"
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/core/REST_API/Router.php:298
 msgid "Theme Options updated."
-msgstr ""
+msgstr "Настройки темы обновлены."
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/templates/Container/theme_options.php:29
 msgid "Actions"
-msgstr ""
+msgstr "Хуки (Actions)"
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/templates/Container/theme_options.php:38
 msgid "Save Changes"
-msgstr ""
+msgstr "Сохранить Изменения"
 
 #: inc/carbon-fields/vendor/htmlburger/carbon-fields/templates/Container/widget.php:5
 msgid "No options are available for this widget."
-msgstr ""
+msgstr "Нет доступных для этого виджета свойств."
 
-#: inc/terr-kurs-admin.php:23
-msgid "PB 24 Course"
-msgstr "Курсы Приват Банка"
+#: inc/terr-kurs-admin.php:24
+msgid "Cash rate of PrivatBank (in branches)"
+msgstr "Наличный курс ПриватБанка (в отделениях)"
+
+#: inc/terr-kurs-admin.php:25
+msgid ""
+"Non-cash exchange rate of PrivatBank (conversion by cards, Privat24, "
+"replenishment of deposits)"
+msgstr ""
+"Безналичный курс ПриватБанка (конвертация по картам, Приват24, пополнение "
+"вкладов)"
 
 #: inc/terr-kurs-admin.php:26
+msgid "Exchange rates for the selected date"
+msgstr "Курсы валют на выбранную дату"
+
+#: inc/terr-kurs-admin.php:34
+msgid "Privat Bank Course"
+msgstr "Приват Банк курс обмена"
+
+#: inc/terr-kurs-admin.php:37
 msgid "Base Settings"
 msgstr "Основные настройки"
 
-#: inc/terr-kurs-admin.php:27
+#: inc/terr-kurs-admin.php:38
 msgid "Currency"
 msgstr "Валюта"
 
-#: inc/terr-kurs-admin.php:29
+#: inc/terr-kurs-admin.php:40
 msgid "Euro"
 msgstr "Euro"
 
-#: inc/terr-kurs-admin.php:30
+#: inc/terr-kurs-admin.php:41
 msgid "Russian Ruble"
 msgstr "Российский рубль"
 
-#: inc/terr-kurs-admin.php:31
+#: inc/terr-kurs-admin.php:42
 msgid "US Dollar"
 msgstr "Доллары США"
 
-#: inc/terr-kurs-admin.php:32
+#: inc/terr-kurs-admin.php:43
 msgid "Bitcoint"
 msgstr "Биткоинт"
 
-#: inc/terr-kurs-admin.php:35
+#: inc/terr-kurs-admin.php:46
 msgid "Select the currency to display."
 msgstr "Выберите валюту для отображения."
 
-#: inc/terr-kurs-admin.php:36
+#: inc/terr-kurs-admin.php:47
 msgid "Check Time (hours)"
 msgstr "Период проверки (часы)"
 
-#: inc/terr-kurs-admin.php:40
+#: inc/terr-kurs-admin.php:54
 msgid "Input Check Time"
 msgstr "Введите время проверки"
 
-#: inc/terr-kurs-admin.php:41
+#: inc/terr-kurs-admin.php:55
 msgid "Input time for check updates currency course."
 msgstr "Введите период в часах проверки и обновления курсов."
+
+#: inc/terr-kurs-admin.php:58
+msgid "Type Exchange"
+msgstr "Тип обмена"
+
+#: inc/terr-kurs-admin.php:62
+msgid "Select your type course exchange"
+msgstr "Выберите ваш тип обмена курса"
+
+#: inc/terr-kurs-admin.php:64
+msgid "Course Date"
+msgstr "Дата курса"
+
+#: inc/terr-kurs-admin.php:68
+msgid "Select course date"
+msgstr "Выберите дату курса"
+
+#: template/main.tpl.php:10
+msgid "Course: "
+msgstr "Курс: "
+
+#: template/main.tpl.php:25
+msgid "On: "
+msgstr "На: "
 
 #. Plugin Name of the plugin/theme
 msgid "Privat Bank Course Exchange"
@@ -312,3 +355,9 @@ msgstr "Sergey Terr"
 #. Author URI of the plugin/theme
 msgid "http://ater.com.ua"
 msgstr "http://ater.com.ua"
+
+#~ msgid "Date Exchange"
+#~ msgstr "Дата обмен"
+
+#~ msgid "PB 24 Course"
+#~ msgstr "Курсы Приват Банка"

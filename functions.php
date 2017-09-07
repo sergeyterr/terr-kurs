@@ -99,37 +99,64 @@
 	}
 
 	/**
-	 * Отображаем курсы валют
+	 * Отображаем курсы валют по заказу админки в строку
 	 */
-	if ( ! function_exists( 'terr_kurs_show' ) )
+	if ( ! function_exists( 'terr_kurs_show_inline' ) )
 	{
-		function terr_kurs_show( $echo = TRUE )
+		function terr_kurs_show_inline( $echo = TRUE )
 		{
-			global $terr_course_text_domain;
-
-			$courses = get_option( 'terr_course_exch', FALSE );
 			$date = get_option( 'terr_course_date', FALSE );
 			$date = date ( 'd m Y', $date );
-			$terr_course_list = carbon_get_theme_option( 'terr_course_list' );
 
-			$result = '<span class="course_body"><span class="course_title">' . __( 'Course: ', $terr_course_text_domain ) . '</span>';
-
-			foreach ( $courses as $course )
-			{
-				if ( in_array( $course['ccy'], $terr_course_list ) )
-				{
-					$result .= '<span class="' . $course['ccy'] . '"><span class="currency_title">' . $course['ccy'] . '</span> <span class="currency_val">' . $course['buy'] . ' / ' . $course['sale'] . '</span></span> ';
-				}
-			}
-
-			$result .= '<span class="course_date">' . __( 'On: ', $terr_course_text_domain ) . $date . '</span></span>';
-
+			$args = array(
+				'courses'          => get_option( 'terr_course_exch', FALSE ),
+				'date'             => $date,
+				'terr_course_list' => get_option( 'terr_course_list' ),
+				'file'				=> 'main',
+			);
+			decor_market_var_dump( get_option( '_terr_course_list', 'none' ) );
 			if ( $echo )
-				echo $result;
+			{
+				echo view_render( $args );
+			}
 			else
-				return $result;
+			{
+				return view_render( $args );
+			}
 		}
 	}
+
+	function view_render( $args )
+	{
+		global $terr_course_text_domain;
+
+		$dir = TERR_KURS_DIR . 'template/';
+
+		extract( $args, EXTR_REFS );
+
+		$file = ( isset( $file ) && ! empty( $file ) && $file != '' ) ? $file : FALSE;
+
+		if ( ! $file )
+			return '';
+
+		$filename = $dir . $file . '.tpl.php';
+
+		if ( ! file_exists( $filename ) )
+			return '';
+
+		// Turn on output buffering
+		ob_start();
+
+		// Include view file
+		include( $filename );
+
+		// Output...
+		$output = ob_get_clean();
+
+		// Return output
+		return $output;
+	}
+
 
 	/**
 	 * Отображаем курсы  шорткодом
