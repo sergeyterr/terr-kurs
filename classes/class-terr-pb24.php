@@ -18,21 +18,55 @@
 		 */
 		class TerrPB24 {
 
+			public static $url_api = 'https://api.privatbank.ua/p24api/';
+			public static $date = '01.12.2014';
+
+			/**
+			 * @param $key
+			 *
+			 * @return bool|mixed
+			 */
+			public static function exchange_opt( $key )
+			{
+				$opt = array(
+					'exchange' => 'pubinfo?json&exchange&coursid=5',
+					'cards'    => 'pubinfo?json&exchange&coursid=11',
+					'date'     => 'exchange_rates?json&date=',
+				);
+
+				return isset( $opt[$key] ) ? $opt[$key] : FALSE;
+			}
+
 			/**
 			 * Получаем список валют и курсов
 			 *
-			 * TerrPB24::get_course_pb24()
+			 * TerrPB24::get_course_pb24( $params_api, $date = '01.12.2014' )
+			 * 'exchange'
+			 * 'cards'
+			 * 'date'
 			 *
-			 * @return array|bool|mixed|null|object
+			 * @param        $params
+			 * @param string $date
+			 *
+			 * @return array|bool|mixed|null|object|string
 			 */
-			public static function get_course_pb24()
+			public static function get_course_pb24( $params, $date = FALSE )
 			{
-				$url_api    = 'https://api.privatbank.ua/p24api/pubinfo?json&exchange';
-				$params_api = array(
-					'coursid' => '3',
-				);
+				$date = ! $date ? self::$date : $date;
 
-				$course = self::P24sendRequest( $url_api, $params_api );
+				if ( ! $params_api = self::exchange_opt( $params ) )
+					return FALSE;
+
+				if ( $params == 'date' )
+				{
+					$url_api    = self::$url_api . $params_api . $date;
+				} else
+				{
+					$url_api    = self::$url_api . $params_api;
+				}
+
+
+				$course = self::P24sendRequest( $url_api );
 
 				return $course;
 			}
@@ -43,31 +77,27 @@
 			 * TerrPB24::P24sendRequest( $url, $params )
 			 *
 			 * @param string $url
-			 * @param array  $params
 			 *
 			 * @return array|bool|mixed|null|object
 			 */
-			public static function P24sendRequest( $url = '', $params = array() )
+			public static function P24sendRequest( $url = '' )
 			{
-				// чтобы кириллица правильно передалась
-				$params = urlencode_deep( $params );
-
-				// Добавим параметр в URL
-				$url = add_query_arg( $params, $url );
-
-				$response = file( $url );
-
-				if ( isset( $response[0] ) )
+				if ( self::urlExists( $url ) )
 				{
-					$response = json_decode( $response[0], TRUE );
-
-					if ( is_array( $response[0] ) && array_key_exists( 'ccy', $response[0] ) )
-					{
-						return $response;
-					}
+					$response = file( $url );
+				} else
+				{
+					return FALSE;
 				}
 
-				return FALSE;
+				$response = json_decode( $response[0], TRUE );
+
+				return $response;
+			}
+
+			private static function urlExists( $path )
+			{
+				return ( @fopen( $path, "r" ) == TRUE );
 			}
 		}
 	}

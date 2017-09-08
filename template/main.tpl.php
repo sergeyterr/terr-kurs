@@ -5,6 +5,11 @@
 	 * Date: 07.09.2017
 	 * Time: 15:31
 	 */
+
+	if ( ! defined( 'ABSPATH' ) )
+	{
+		exit; // Exit if accessed directly
+	}
 ?>
 	<span class="course_body">
 		<span class="course_title"><?php _e( 'Course: ', $terr_course_text_domain ); ?></span>

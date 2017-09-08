@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Privat Bank Course Exchange\n"
-"POT-Creation-Date: 2017-09-07 19:11+0300\n"
-"PO-Revision-Date: 2017-09-07 19:12+0300\n"
+"POT-Creation-Date: 2017-09-08 16:40+0300\n"
+"PO-Revision-Date: 2017-09-08 16:40+0300\n"
 "Last-Translator: Sergey Terr <ater123@mail.ru>\n"
 "Language-Team: Sergey Terr <ater123@mail.ru>\n"
 "Language: ru_RU\n"
@@ -268,71 +268,110 @@ msgstr ""
 msgid "Exchange rates for the selected date"
 msgstr "Курсы валют на выбранную дату"
 
-#: inc/terr-kurs-admin.php:34
+#: inc/terr-kurs-admin.php:38
 msgid "Privat Bank Course"
 msgstr "Приват Банк курс обмена"
 
-#: inc/terr-kurs-admin.php:37
+#: inc/terr-kurs-admin.php:41
 msgid "Base Settings"
 msgstr "Основные настройки"
 
-#: inc/terr-kurs-admin.php:38
+#: inc/terr-kurs-admin.php:42
 msgid "Currency"
 msgstr "Валюта"
 
-#: inc/terr-kurs-admin.php:40
+#: inc/terr-kurs-admin.php:44
 msgid "Euro"
 msgstr "Euro"
 
-#: inc/terr-kurs-admin.php:41
+#: inc/terr-kurs-admin.php:45
 msgid "Russian Ruble"
 msgstr "Российский рубль"
 
-#: inc/terr-kurs-admin.php:42
+#: inc/terr-kurs-admin.php:46
 msgid "US Dollar"
 msgstr "Доллары США"
 
-#: inc/terr-kurs-admin.php:43
+#: inc/terr-kurs-admin.php:47
 msgid "Bitcoint"
 msgstr "Биткоинт"
 
-#: inc/terr-kurs-admin.php:46
+#: inc/terr-kurs-admin.php:50
 msgid "Select the currency to display."
 msgstr "Выберите валюту для отображения."
 
-#: inc/terr-kurs-admin.php:47
+#: inc/terr-kurs-admin.php:51
 msgid "Check Time (hours)"
 msgstr "Период проверки (часы)"
 
-#: inc/terr-kurs-admin.php:54
+#: inc/terr-kurs-admin.php:57
 msgid "Input Check Time"
 msgstr "Введите время проверки"
 
-#: inc/terr-kurs-admin.php:55
+#: inc/terr-kurs-admin.php:58
 msgid "Input time for check updates currency course."
 msgstr "Введите период в часах проверки и обновления курсов."
 
-#: inc/terr-kurs-admin.php:58
+#: inc/terr-kurs-admin.php:62
+msgid "Additional Settings"
+msgstr "Дополнительные настройки"
+
+#: inc/terr-kurs-admin.php:63
 msgid "Type Exchange"
 msgstr "Тип обмена"
 
-#: inc/terr-kurs-admin.php:62
+#: inc/terr-kurs-admin.php:67
 msgid "Select your type course exchange"
 msgstr "Выберите ваш тип обмена курса"
 
-#: inc/terr-kurs-admin.php:64
+#: inc/terr-kurs-admin.php:69
 msgid "Course Date"
 msgstr "Дата курса"
 
-#: inc/terr-kurs-admin.php:68
+#: inc/terr-kurs-admin.php:73
 msgid "Select course date"
 msgstr "Выберите дату курса"
 
-#: template/main.tpl.php:10
+#: template/admin-shortcode.tpl.php:8
+msgid "Display"
+msgstr "Отображение"
+
+#: template/admin-shortcode.tpl.php:9
+msgid "To display the Courses on the site page as:"
+msgstr "Для вывода Курсов на странице сайта в виде:"
+
+#: template/admin-shortcode.tpl.php:10
+msgid ""
+"Course: EUR  30.99938 / 30.85962 USD  25.98221 / 25.95426 At: 07 09 2017"
+msgstr "Курс: EUR  30.99938 / 30.85962 USD  25.98221 / 25.95426 На: 07 09 2017"
+
+#: template/admin-shortcode.tpl.php:11
+msgid ""
+"It is necessary in the right place of the template to insert the PHP function"
+msgstr "Необходимо в нужном месте шаблона вставить PHP функцию"
+
+#: template/admin-shortcode.tpl.php:12
+msgid "Or shortcode"
+msgstr "Или shortcode"
+
+#: template/admin-shortcode.tpl.php:13
+msgid "Attention"
+msgstr "Внимание"
+
+#: template/admin-shortcode.tpl.php:14
+msgid ""
+"The exchange rate of Privat Bank is shown, in cash, in branches. To display "
+"other courses, you must use the settings on the corresponding tab."
+msgstr ""
+"Выводится курс валют Приват Банка, наличного обмена, в отделениях. Для "
+"вывода других курсов, необходимо воспользоваться настройками на "
+"соответствующей вкладке."
+
+#: template/main.tpl.php:15
 msgid "Course: "
 msgstr "Курс: "
 
-#: template/main.tpl.php:25
+#: template/main.tpl.php:30
 msgid "On: "
 msgstr "На: "
 

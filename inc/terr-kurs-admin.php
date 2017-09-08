@@ -31,6 +31,10 @@
 			'maxDate' => date( 'Y-m-d', ( time() - ( 6 * 24 * 60 * 60 ) ) ),
 		);
 
+		$args = array(
+			'file'				=> 'admin-shortcode',
+		);
+
 		Container::make( 'theme_options', __( 'Privat Bank Course', $terr_course_text_domain ) )
 				 ->set_page_file( 'terr_course_admin_page' )
 				 ->set_icon( 'dashicons-chart-bar' )
@@ -44,17 +48,18 @@
 						  ) )
 						  ->set_default_value( array( 'USD', 'EUR' ) )
 						  ->set_help_text( __( 'Select the currency to display.', $terr_course_text_domain ) ),
-					 Field::make( 'text', 'terr_course_check_time', __( 'Check Time (hours)', $terr_course_text_domain ) )
-						  //->set_width( 33 )
+					 Field::make( 'text', 'terr_course_check_time', __( 'Check Time (hours)', $terr_course_text_domain ) )//->set_width( 33 )
 						  ->set_attribute( 'type', 'number' )
-						  ->set_attribute( 'min', '0' )
-						  ->set_attribute( 'step', '0.01' )
+						  ->set_attribute( 'min', '1' )
+						  ->set_attribute( 'step', '1' )
 						  ->set_classes( 'terr_course_check_time' )
 						  ->set_default_value( '4' )
 						  ->set_attribute( 'placeholder', __( 'Input Check Time', $terr_course_text_domain ) )
 						  ->set_help_text( __( 'Input time for check updates currency course.', $terr_course_text_domain ) ),
-					/* Field::make( 'html', 'terr_course_main_now' )
-						  ->set_html( terr_kurs_show_inline( FALSE ) ),*/
+					 Field::make( 'html', 'terr_course_main_now' )
+						  ->set_html( view_render( $args ) ),
+				 ) )
+				 ->add_tab( __( 'Additional Settings', $terr_course_text_domain ), array(
 					 Field::make( 'select', 'terr_course_type_exchange', __( 'Type Exchange', $terr_course_text_domain ) )
 						  ->set_width( 33 )
 						  ->set_default_value( 'cash' )
