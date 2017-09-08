@@ -16,14 +16,14 @@
 		$text = '';
 	}
 ?>
-	<h3>Курс <?= $text ?> на дату: <?= $dates ?></h3>
+	<h3><?= __( 'Course', $terr_course_text_domain ) . ' ' . $text . ' ' . __( 'on the date:', $terr_course_text_domain ) . ' ' . $dates?></h3>
 	<div style="width: 300px">
 		<table>
 			<thead>
 				<tr>
-					<th>Валюта</th>
-					<th>Покупка</th>
-					<th>Продажа</th>
+					<th><?php _e( 'Currency', $terr_course_text_domain ) ?></th>
+					<th><?php _e( 'Buy', $terr_course_text_domain ) ?></th>
+					<th><?php _e( 'Sale', $terr_course_text_domain ) ?></th>
 				</tr>
 			</thead>
 

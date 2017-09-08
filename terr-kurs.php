@@ -3,7 +3,7 @@
 	 * Plugin Name: Privat Bank Course Exchange
 	 * Plugin URI: https://ater.com.ua
 	 * Description: Плагин получения курсов валют
-	 * Version: 1.1.0
+	 * Version: 1.1.1
 	 * Author: Sergey Terr
 	 * Author URI: http://ater.com.ua
 	 * Support URI: http://aterweb.ru

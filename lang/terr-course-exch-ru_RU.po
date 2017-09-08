@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Privat Bank Course Exchange\n"
-"POT-Creation-Date: 2017-09-08 16:40+0300\n"
-"PO-Revision-Date: 2017-09-08 16:40+0300\n"
+"POT-Creation-Date: 2017-09-09 00:23+0300\n"
+"PO-Revision-Date: 2017-09-09 00:24+0300\n"
 "Last-Translator: Sergey Terr <ater123@mail.ru>\n"
 "Language-Team: Sergey Terr <ater123@mail.ru>\n"
 "Language: ru_RU\n"
@@ -268,91 +268,92 @@ msgstr ""
 msgid "Exchange rates for the selected date"
 msgstr "Курсы валют на выбранную дату"
 
-#: inc/terr-kurs-admin.php:38
+#: inc/terr-kurs-admin.php:47
 msgid "Privat Bank Course"
 msgstr "Приват Банк курс обмена"
 
-#: inc/terr-kurs-admin.php:41
+#: inc/terr-kurs-admin.php:50
 msgid "Base Settings"
 msgstr "Основные настройки"
 
-#: inc/terr-kurs-admin.php:42
+#: inc/terr-kurs-admin.php:51 template/archive.tpl.php:14
+#: template/courses.tpl.php:24
 msgid "Currency"
 msgstr "Валюта"
 
-#: inc/terr-kurs-admin.php:44
+#: inc/terr-kurs-admin.php:53
 msgid "Euro"
 msgstr "Euro"
 
-#: inc/terr-kurs-admin.php:45
+#: inc/terr-kurs-admin.php:54
 msgid "Russian Ruble"
 msgstr "Российский рубль"
 
-#: inc/terr-kurs-admin.php:46
+#: inc/terr-kurs-admin.php:55
 msgid "US Dollar"
 msgstr "Доллары США"
 
-#: inc/terr-kurs-admin.php:47
+#: inc/terr-kurs-admin.php:56
 msgid "Bitcoint"
 msgstr "Биткоинт"
 
-#: inc/terr-kurs-admin.php:50
+#: inc/terr-kurs-admin.php:59
 msgid "Select the currency to display."
 msgstr "Выберите валюту для отображения."
 
-#: inc/terr-kurs-admin.php:51
+#: inc/terr-kurs-admin.php:60
 msgid "Check Time (hours)"
 msgstr "Период проверки (часы)"
 
-#: inc/terr-kurs-admin.php:57
+#: inc/terr-kurs-admin.php:66
 msgid "Input Check Time"
 msgstr "Введите время проверки"
 
-#: inc/terr-kurs-admin.php:58
+#: inc/terr-kurs-admin.php:67
 msgid "Input time for check updates currency course."
 msgstr "Введите период в часах проверки и обновления курсов."
 
-#: inc/terr-kurs-admin.php:62
+#: inc/terr-kurs-admin.php:71
 msgid "Additional Settings"
 msgstr "Дополнительные настройки"
 
-#: inc/terr-kurs-admin.php:63
+#: inc/terr-kurs-admin.php:72
 msgid "Type Exchange"
 msgstr "Тип обмена"
 
-#: inc/terr-kurs-admin.php:67
+#: inc/terr-kurs-admin.php:76
 msgid "Select your type course exchange"
 msgstr "Выберите ваш тип обмена курса"
 
-#: inc/terr-kurs-admin.php:69
-msgid "Course Date"
-msgstr "Дата курса"
-
-#: inc/terr-kurs-admin.php:73
-msgid "Select course date"
-msgstr "Выберите дату курса"
-
-#: template/admin-shortcode.tpl.php:8
+#: template/admin-shortcode-add-exch.tpl.php:8
+#: template/admin-shortcode-add-seldate.tpl.php:8
+#: template/admin-shortcode-add.tpl.php:8 template/admin-shortcode.tpl.php:8
 msgid "Display"
 msgstr "Отображение"
 
-#: template/admin-shortcode.tpl.php:9
+#: template/admin-shortcode-add-exch.tpl.php:10
+#: template/admin-shortcode-add-seldate.tpl.php:10
+#: template/admin-shortcode-add.tpl.php:10 template/admin-shortcode.tpl.php:9
 msgid "To display the Courses on the site page as:"
 msgstr "Для вывода Курсов на странице сайта в виде:"
+
+#: template/admin-shortcode-add-exch.tpl.php:18
+#: template/admin-shortcode-add-seldate.tpl.php:18
+#: template/admin-shortcode-add.tpl.php:18 template/admin-shortcode.tpl.php:11
+msgid ""
+"It is necessary in the right place of the template to insert the PHP function"
+msgstr "Необходимо в нужном месте шаблона вставить PHP функцию"
+
+#: template/admin-shortcode-add-exch.tpl.php:20
+#: template/admin-shortcode-add-seldate.tpl.php:20
+#: template/admin-shortcode-add.tpl.php:20 template/admin-shortcode.tpl.php:12
+msgid "Or shortcode"
+msgstr "Или shortcode"
 
 #: template/admin-shortcode.tpl.php:10
 msgid ""
 "Course: EUR  30.99938 / 30.85962 USD  25.98221 / 25.95426 At: 07 09 2017"
 msgstr "Курс: EUR  30.99938 / 30.85962 USD  25.98221 / 25.95426 На: 07 09 2017"
-
-#: template/admin-shortcode.tpl.php:11
-msgid ""
-"It is necessary in the right place of the template to insert the PHP function"
-msgstr "Необходимо в нужном месте шаблона вставить PHP функцию"
-
-#: template/admin-shortcode.tpl.php:12
-msgid "Or shortcode"
-msgstr "Или shortcode"
 
 #: template/admin-shortcode.tpl.php:13
 msgid "Attention"
@@ -367,11 +368,39 @@ msgstr ""
 "вывода других курсов, необходимо воспользоваться настройками на "
 "соответствующей вкладке."
 
-#: template/main.tpl.php:15
+#: template/archive.tpl.php:8
+msgid "Course archive as of the date:"
+msgstr "Архив курсов по состоянию на дату:"
+
+#: template/archive.tpl.php:15
+msgid "Buy NB"
+msgstr "Покупка НБ"
+
+#: template/archive.tpl.php:16
+msgid "Sale NB"
+msgstr "Продажа НБ"
+
+#: template/archive.tpl.php:17 template/courses.tpl.php:25
+msgid "Buy"
+msgstr "Покупка"
+
+#: template/archive.tpl.php:18 template/courses.tpl.php:26
+msgid "Sale"
+msgstr "Продажа"
+
+#: template/courses.tpl.php:19
+msgid "Course"
+msgstr "Курс"
+
+#: template/courses.tpl.php:19
+msgid "on the date:"
+msgstr "на дату:"
+
+#: template/main.tpl.php:9
 msgid "Course: "
 msgstr "Курс: "
 
-#: template/main.tpl.php:30
+#: template/main.tpl.php:24
 msgid "On: "
 msgstr "На: "
 
@@ -394,6 +423,12 @@ msgstr "Sergey Terr"
 #. Author URI of the plugin/theme
 msgid "http://ater.com.ua"
 msgstr "http://ater.com.ua"
+
+#~ msgid "Course Date"
+#~ msgstr "Дата курса"
+
+#~ msgid "Select course date"
+#~ msgstr "Выберите дату курса"
 
 #~ msgid "Date Exchange"
 #~ msgstr "Дата обмен"
