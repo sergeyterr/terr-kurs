@@ -172,6 +172,7 @@
 				'dates'   => $dates,
 				'file'    => $file,
 				'courses' => $courses,
+				'type'    => $type_course,
 			);
 			;
 			if ( $echo )
@@ -182,6 +183,24 @@
 			{
 				return view_render( $args );
 			}
+		}
+	}
+
+	/**
+	 * Отображаем курсы валют дополнительные
+	 * 'exchange'
+	 * 'cards'
+	 * 'date'
+	 */
+	if ( ! function_exists( 'terr_kurs_show_short_exch' ) )
+	{
+		function terr_kurs_show_short_exch( $atts, $content, $tag )
+		{
+			extract( $atts, EXTR_REFS );
+
+			$type_course = ( isset( $type_course ) ) ? $type_course : 'exchange';
+
+			return terr_kurs_show_adding( $type_course, FALSE, FALSE );
 		}
 	}
 

@@ -1,10 +1,4 @@
 <?php
-	/**
-	 * Created by PhpStorm.
-	 * User: Sergey
-	 * Date: 07.09.2017
-	 * Time: 15:31
-	 */
 
 	if ( ! defined( 'ABSPATH' ) )
 	{

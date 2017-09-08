@@ -1,10 +1,9 @@
 <?php
-	/**
-	 * Created by PhpStorm.
-	 * User: Sergey
-	 * Date: 08.09.2017
-	 * Time: 9:52
-	 */
+
+	if ( ! defined( 'ABSPATH' ) )
+	{
+		exit; // Exit if accessed directly
+	}
 ?>
 	<h3>Архив курса на дату: <?= $dates ?></h3>
 
@@ -41,7 +40,7 @@
 <form action="" method="post">
 	<?php wp_nonce_field('terr_cource_date_archive_action','terr_cource_date_archive_field'); ?>
 
-	<input type="text" name="course_by_date" id="course_by_date" class="datepicker-here" data-dateFormat="d.m.Y">
+	<input type="text" name="course_by_date" placeholder="01.01.2014" id="course_by_date" class="datepicker-here" data-dateFormat="d.m.Y">
 
 	<input type="submit" name="submit_course_by_date" value="Выбрать дату">
 </form>

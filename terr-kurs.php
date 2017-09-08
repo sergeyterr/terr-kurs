@@ -67,3 +67,4 @@
 
 	// добавляем шорткод вывода курсов
 	add_shortcode( 'privat_bank_course', 'terr_kurs_show_short' );
+	add_shortcode( 'privat_bank_course_add', 'terr_kurs_show_short_exch' );

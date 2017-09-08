@@ -1,12 +1,22 @@
 <?php
-	/**
-	 * Created by PhpStorm.
-	 * User: Sergey
-	 * Date: 08.09.2017
-	 * Time: 9:52
-	 */
+
+	if ( ! defined( 'ABSPATH' ) )
+	{
+		exit; // Exit if accessed directly
+	}
+
+	if ( $type == 'cards' )
+	{
+		$text = 'по карточкам';
+	} elseif ( $type == 'exchange' )
+	{
+		$text = 'в обменках';
+	} else
+	{
+		$text = '';
+	}
 ?>
-	<h3>Курс на дату: <?= $dates ?></h3>
+	<h3>Курс <?= $text ?> на дату: <?= $dates ?></h3>
 	<div style="width: 300px">
 		<table>
 			<thead>
